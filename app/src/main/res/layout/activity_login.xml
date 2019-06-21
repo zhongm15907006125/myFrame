@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/login_bg"
+    tools:context=".ui.activity.login.view.LoginActivity">
+
+    <EditText
+        android:id="@+id/phone"
+        style="@style/login_edittext"
+        android:hint="@string/phone_please" />
+
+    <EditText
+        android:id="@+id/pwd"
+        style="@style/login_edittext"
+        android:inputType="numberPassword"
+        android:textCursorDrawable="@color/white"
+        android:hint="@string/pwd_please" />
+<RelativeLayout
+    style="@style/login_edittext"
+    >
+
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:layout_marginStart="5dp"
+        />
+
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/forget_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forget_pwd"
+        android:layout_alignParentEnd="true"
+        />
+</RelativeLayout>
+    <Button
+        android:id="@+id/login"
+        android:layout_margin="50dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@drawable/login_bt"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:text="@string/login" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_third"
+            android:textColor="@color/gray"
+            android:layout_marginBottom="20dp"
+            />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/wechat"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/qq"/>
+    </LinearLayout>
+
+</LinearLayout>

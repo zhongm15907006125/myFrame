@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="array_home_tab_ic">
+        <item>@drawable/select_main_main</item>
+        <item>@drawable/select_main_focus</item>
+        <item>@drawable/select_main_found</item>
+        <item>@drawable/select_main_my</item>
+    </array>
+
+    <array name="array_home_tab_str">
+        <item>@string/main</item>
+        <item>@string/focus</item>
+        <item>@string/found</item>
+        <item>@string/my</item>
+    </array>
+</resources>

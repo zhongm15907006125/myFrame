@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/login_bg"
+    tools:context=".ui.activity.login.view.LoginActivity">
+
+    <EditText
+        android:id="@+id/phone"
+        style="@style/login_edittext"
+        android:theme="@style/MyEditText"
+        android:hint="@string/phone_please" />
+    <LinearLayout
+        android:orientation="horizontal"
+        style="@style/login_edittext">
+        <EditText
+            android:id="@+id/sms"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:theme="@style/MyEditText"
+            android:hint="@string/sms_please" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textSize="12sp"
+            android:layout_marginEnd="4dp"
+            android:text="@string/send_sms"
+            android:layout_marginBottom="9dp"
+            android:background="@color/blue_light"
+            />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/pwd"
+        style="@style/login_edittext"
+        android:textCursorDrawable="@color/white"
+        android:hint="@string/pwd_please" />
+    <EditText
+        android:id="@+id/pwd_sure"
+        style="@style/login_edittext"
+        android:textCursorDrawable="@color/white"
+        android:hint="@string/pwd_sure" />
+    <Button
+        android:id="@+id/reset_pwd"
+        android:layout_margin="50dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@drawable/login_bt"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:text="@string/reset_pwd" />
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/DIMEN_135PX"
+    android:id="@+id/title_bg_rl"
+    android:paddingTop="@dimen/DIMEN_50PX"
+    android:background="@drawable/side_nav_bar"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/ll_title_left"
+        android:layout_width="@dimen/DIMEN_100PX"
+        android:layout_height="@dimen/DIMEN_55PX"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/DIMEN_10PX"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/iv_title_left"
+            android:layout_width="@dimen/DIMEN_35PX"
+            android:layout_height="@dimen/DIMEN_35PX"
+            android:layout_marginLeft="@dimen/DIMEN_10PX"
+            android:src="@drawable/ico_title_back"
+            android:contentDescription="@null"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/back_button"
+        android:layout_width="@dimen/DIMEN_110PX"
+        android:layout_height="@dimen/DIMEN_85PX"
+        android:drawableLeft="@drawable/ico_title_back"
+        android:drawablePadding="@dimen/DIMEN_10PX"
+        android:gravity="center"
+        android:visibility="gone"
+        android:paddingLeft="@dimen/DIMEN_22PX"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size24"/>
+    <!--居中文字-->
+    <TextView
+        android:id="@+id/title_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size32"
+        android:text=""/>
+
+    <ImageView
+        android:id="@+id/title_img"
+        android:layout_width="@dimen/DIMEN_30PX"
+        android:layout_height="@dimen/DIMEN_30PX"
+        android:layout_centerInParent="true"
+        android:scaleType="centerInside"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/right_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/DIMEN_50PX"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/DIMEN_22PX"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size30"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/right_image"
+        android:layout_width="@dimen/DIMEN_55PX"
+        android:layout_height="@dimen/DIMEN_55PX"
+        android:scaleType="fitXY"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/DIMEN_10PX"
+        android:contentDescription="@null"
+        android:padding="@dimen/DIMEN_10PX"
+        android:visibility="gone"/>
+
+</RelativeLayout>
